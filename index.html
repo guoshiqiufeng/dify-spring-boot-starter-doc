@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dify Spring Boot Starter Documentation</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+        .docs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .doc-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .doc-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .doc-card h2 {
+            font-size: 1.5rem;
+            margin-top: 0;
+            color: #3498db;
+        }
+        .doc-card p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .doc-link {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        .doc-link:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        .lang-switcher {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .lang-btn {
+            background-color: transparent;
+            border: 1px solid #3498db;
+            color: #3498db;
+            padding: 5px 15px;
+            margin: 0 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 80px;
+            display: inline-block;
+            height: 32px;
+            line-height: 20px;
+            vertical-align: middle;
+            box-sizing: border-box;
+        }
+        .lang-btn.active {
+            background-color: #3498db;
+            color: white;
+        }
+        .lang-content {
+            display: none;
+        }
+        .lang-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dify Spring Boot Starter</h1>
+            <div class="subtitle">Documentation Navigation</div>
+            <div class="lang-switcher">
+                <button class="lang-btn active" onclick="switchLanguage('en')">English</button>
+                <button class="lang-btn" onclick="switchLanguage('zh')">中文</button>
+            </div>
+        </header>
+
+        <!-- English Content -->
+        <div id="en-content" class="lang-content active">
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <h2>Latest Version</h2>
+                    <p>Access the latest version of the Dify Spring Boot Starter documentation.</p>
+                    <a href="https://guoshiqiufeng.github.io/dify-spring-boot-starter/en/" class="doc-link">View Documentation</a>
+                </div>
+
+                <div class="doc-card">
+                    <h2>Latest SNAPSHOT Version (v1.x)</h2>
+                    <p>Access the latest documentation for the v1.x-SNAPSHOT version of Dify Spring Boot Starter.</p>
+                    <a href="https://guoshiqiufeng.github.io/dify-spring-boot-starter-doc/v1.x-SNAPSHOT/en/" class="doc-link">View Documentation</a>
+                </div>
+
+                <div class="doc-card">
+                    <h2>Stable Version (v0.x)</h2>
+                    <p>Access the documentation for the stable v0.x version of Dify Spring Boot Starter.</p>
+                    <a href="https://guoshiqiufeng.github.io/dify-spring-boot-starter-doc/v0.x/en/" class="doc-link">View Documentation</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chinese Content -->
+        <div id="zh-content" class="lang-content">
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <h2>最新版文档</h2>
+                    <p>访问 Dify Spring Boot Starter 的最新版文档。</p>
+                    <a href="https://guoshiqiufeng.github.io/dify-spring-boot-starter/" class="doc-link">查看文档</a>
+                </div>
+
+                <div class="doc-card">
+                    <h2>最新快照版本 (v1.x)</h2>
+                    <p>访问 Dify Spring Boot Starter v1.x-SNAPSHOT 版本的最新文档。</p>
+                    <a href="https://guoshiqiufeng.github.io/dify-spring-boot-starter-doc/v1.x-SNAPSHOT/" class="doc-link">查看文档</a>
+                </div>
+
+                <div class="doc-card">
+                    <h2>稳定版本 (v0.x)</h2>
+                    <p>访问 Dify Spring Boot Starter v0.x 稳定版本的文档。</p>
+                    <a href="https://guoshiqiufeng.github.io/dify-spring-boot-starter-doc/v0.x/" class="doc-link">查看文档</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Dify Spring Boot Starter. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            // Hide all language content
+            document.querySelectorAll('.lang-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show selected language content
+            document.getElementById(lang + '-content').classList.add('active');
+            
+            // Update button styles
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Find the button that was clicked and add active class
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                if (btn.textContent === 'English' && lang === 'en') {
+                    btn.classList.add('active');
+                } else if (btn.textContent === '中文' && lang === 'zh') {
+                    btn.classList.add('active');
+                }
+            });
+        }
+
+        // Check URL parameters when page loads
+        window.onload = function() {
+            // Get URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
+            
+            // If lang parameter exists and is valid, switch to that language
+            if (lang === 'zh' || lang === 'en') {
+                switchLanguage(lang);
+            }
+        };
+    </script>
+</body>
+</html>
