@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.26" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/images/f.ico"><link rel="shortcut icon" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/images/f.ico"><title>dify-spring-boot-starter</title><meta name="description" content="dify springboot 实现">
+    <link rel="preload" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/style-C5QREZ3P.css" as="style"><link rel="stylesheet" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/style-C5QREZ3P.css">
+    <link rel="modulepreload" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/app-CnyxjiNd.js"><link rel="modulepreload" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/404.html-BUuo2Y32.js">
+    <link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/index.html-CUFFyivL.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/custom.html-E40mxscf.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/introduction.html-N63XZ_36.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/index.html-Cwg9F5XX.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/builder.html-D8fTxJuF.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/config.html-FtTxf8pL.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/getting-started.html-DnVUf1i5.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/install.html-BQd9ZUZQ.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/introduction.html-9Rq1EkgG.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/status.html-CXwTCTI7.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/custom.html-DAnDAYDt.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/introduction.html-qp4F-nC0.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/builder.html-DRTPAghQ.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/config.html-DGw4sWwn.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/getting-started.html-CRZ1ke2x.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/install.html-SnMRaQ0a.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/introduction.html-BoNGR1qI.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/status.html-pD2uY6C0.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/chat.html-D6ZGVLtA.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/introduction.html-M6bnVJXo.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/chat.html-CJGHm2Ky.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/dataset.html-k1BqqJh1.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/server.html-rKyenqzO.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/workflow.html-CH14JAQp.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/chat.html-DRxLFFzX.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/dataset.html-CX8Zygn9.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/server.html-DBEtU-G8.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/workflow.html-55VCLRCy.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/chat.html-DQXPl8J0.js" as="script"><link rel="prefetch" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/introduction.html-C4nzoLMn.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-33d3430e><main class="page" data-v-33d3430e><div vp-content data-v-33d3430e><h1 data-v-33d3430e>404</h1><blockquote data-v-33d3430e>这里什么都没有</blockquote><a class="route-link" href="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/" data-v-33d3430e>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/dify-spring-boot-starter-doc/v2.x-SNAPSHOT/assets/app-CnyxjiNd.js" defer></script>
+  </body>
+</html>
